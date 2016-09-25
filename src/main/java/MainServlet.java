@@ -1,0 +1,46 @@
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.Writer;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+/**
+ * Created by Rustam on 22.09.16.
+ */
+
+public class MainServlet extends HttpServlet {
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+       // req.getRequestDispatcher("/signUpPages.jsp").forward(req, resp);
+        PrintWriter out = resp.getWriter();
+        resp.setContentType("text/html;charset=UTF-8");
+        resp.setStatus(200);
+        out.println(getPageCode());
+
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        resp.setContentType("text/html;charset=UTF-8");
+        resp.setStatus(200);
+        PrintWriter out = resp.getWriter();
+        out.println(getPageCode());
+    }
+
+
+    protected String getPageCode(){
+        return "<a href='/registrarion'>Registration</a>";
+
+
+    }
+}
