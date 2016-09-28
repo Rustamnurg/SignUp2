@@ -18,7 +18,7 @@ public class SignUp extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html;charset=UTF-8");
-        resp.setStatus(200);
+        //resp.setStatus(200);
         PrintWriter out = resp.getWriter();
 
         String[] arr = new String[7];
@@ -32,14 +32,17 @@ public class SignUp extends HttpServlet {
 
 
         Check checkClass = new Check();
-        String result = "";
+        String result;
         result = checkClass.check(arr);
         if(result.equals("")){
+            resp.setStatus(302);
             Date date = new Date();
             date.save(arr);
             out.println(getPageCode("All ok"));
+
         }
         else{
+            resp.setStatus(302);
             out.println(getPageCode(result + "<br />"+ "<a href=\"javascript:history.back();\">Try agan</a>"));
         }
 

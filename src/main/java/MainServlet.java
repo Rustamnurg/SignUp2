@@ -40,7 +40,5 @@ public class MainServlet extends HttpServlet {
 
     protected String getPageCode(){
         return "<a href='/registrarion'>Registration</a>";
-
-
     }
 }

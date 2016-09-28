@@ -8,11 +8,7 @@ import java.util.regex.Pattern;
 public class Check {
 
     public String check(String[] arr  ){
-
-        Boolean good = true;
-
         String result = "";
-
 
         if(!Pattern.compile("[a-zA-Zа-яА-я]{2,20}").matcher(arr[0]).matches()){
             result += "Wrong first name \n";
@@ -21,7 +17,6 @@ public class Check {
 
         if(!Pattern.compile("[a-zA-Zа-яА-я]{2,20}").matcher(arr[1]).matches()){
             result += "Wrong last name\n";
-
         }
 
         if(!Pattern.compile("[a-zA-Z0-9]+@(([a-zA-Z0-9\\-]+\\.)([a-zA-Z0-9\\-])+)+").matcher(arr[2]).matches()){
