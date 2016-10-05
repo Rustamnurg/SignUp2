@@ -38,7 +38,8 @@ public class SignUp extends HttpServlet {
             resp.setStatus(302);
             Date date = new Date();
             date.save(arr);
-            out.println(getPageCode("All ok"));
+            req.getRequestDispatcher("/LogIn.jsp").forward(req, resp);
+
 
         }
         else{
