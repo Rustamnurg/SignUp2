@@ -1,3 +1,5 @@
+import DateUsers.DataBase.SearchData;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -43,5 +45,3 @@ public class MainServlet extends HttpServlet {
                 + "<a href='/LogIn'>Log in</a>";
     }
 }
-//    itiskpfu505@gmail.com
-//            itiskpfu505

@@ -16,7 +16,7 @@
 
 <form method="POST">
     <p>Login: <input type="login" name="login" ></p>
-    <p>Password: <input type="password" name="passwordFirst" ></p>
+    <p>Password: <input type="password" name="password" ></p>
     <p><input type="submit" value="Log in"></p>
 
 </form>
