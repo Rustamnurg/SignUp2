@@ -18,14 +18,12 @@ public class SearchData {
         Connection conn;
         Statement stmt;
         User user = new User();
-      //  user = null;
         try {
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection(url, name, password);
             stmt = conn.createStatement();
             String query = "select * from users";
             ResultSet rs = stmt.executeQuery(query);
-
 
             while (rs.next()) {
                 if(rs.getString("login").equals(login) && rs.getString("password").equals(passwordUsers)){
@@ -35,13 +33,6 @@ public class SearchData {
                     user.setLogin(rs.getString("login"));
                     user.setPassword(rs.getString("password"));
                     user.setCountry(rs.getString("country"));
-                    System.out.println(user.getFirstName());
-                    System.out.println(user.getLastName());
-                    System.out.println(user.getEmail());
-                    System.out.println(user.getLogin());
-                    System.out.println(user.getPassword());
-                    System.out.println(user.getCountry());
-
                 }
             }
             conn.close();

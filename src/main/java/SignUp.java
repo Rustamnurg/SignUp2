@@ -31,7 +31,7 @@ public class SignUp extends HttpServlet {
         String result = null;
 
         try {
-            result = mainDataProcessor.dateProcessor(req.getParameter("firstName"), req.getParameter("lastName"), req.getParameter("email"),
+            result = mainDataProcessor.dateProcessorRegestrarion(req.getParameter("firstName"), req.getParameter("lastName"), req.getParameter("email"),
                     req.getParameter("login"), req.getParameter("passwordFirst"), req.getParameter("passwordSecond"),
                     req.getParameter("country"));
         } catch (SQLException e) {

@@ -1,11 +1,14 @@
 
 
+import DateUsers.MainDataProcessor;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 
 /**
  * Created by Rustam on 30.09.16.
@@ -30,13 +33,23 @@ public class LogIn extends HttpServlet {
         resp.setStatus(200);
         PrintWriter out = resp.getWriter();
 
+        MainDataProcessor mainDataProcessor = new MainDataProcessor();
 
-//        SearchDate searchDate = new SearchDate();
-//        boolean check  = searchDate.searchDate(req.getParameter("login"), req.getParameter("password"));
-//        System.out.println(check);
-//
-//        out.println(getPageCode(req.getParameter("login") + " " + check));
+        String result = "";
+
+        result = mainDataProcessor.dateProcessorLogIn(req.getParameter("login"), req.getParameter("password"));
+
+        System.out.println(result);
+        if (result.equals("")) {
+            resp.setStatus(302);
+            out.println(getPageCode("<p> all ok </p>"));
+        } else {
+            resp.setStatus(302);
+            out.println(getPageCode(result + "<br />" + "<a href=\"javascript:history.back();\">Try agan</a>"));
+        }
     }
+
+
 
     protected String getPageCode(String content){
         return "<!DOCTYPE html><html>"

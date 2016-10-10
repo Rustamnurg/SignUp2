@@ -28,6 +28,7 @@ public class СheckMatch {
         }
     }
 
+
     private boolean checkMatch(String colum, String value){
         String url = "jdbc:postgresql://localhost/users?characterEncoding=utf8";
         String name = "rustam_admin";
@@ -58,4 +59,35 @@ public class СheckMatch {
 
     }
 
+
+    public boolean checkMatchLogIn(String loginCheck, String passwordCheck){
+        String url = "jdbc:postgresql://localhost/users?characterEncoding=utf8";
+        String name = "rustam_admin";
+        String password = "123321";
+        Connection conn;
+        Statement stmt;
+        boolean isExist = false;
+
+        try {
+            Class.forName("org.postgresql.Driver");
+            conn = DriverManager.getConnection(url, name, password);
+            stmt = conn.createStatement();
+            String query = "SELECT login, password from users";
+            ResultSet rs = stmt.executeQuery(query);
+            while (rs.next()) {
+                if(rs.getString("login").equals(loginCheck)){
+                    if(rs.getString("password").equals(passwordCheck))
+                    isExist = true;
+                    break;
+                }
+            }
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return isExist;
+
+    }
 }

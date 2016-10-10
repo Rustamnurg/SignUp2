@@ -2,7 +2,7 @@ package DateUsers;
 
 
 import DateUsers.DataBase.*;
-import User.User;
+import User.*;
 
 import java.sql.SQLException;
 
@@ -14,29 +14,49 @@ public class MainDataProcessor {
     AddDb addDb = new AddDb();
     СheckMatch сheckMatch = new СheckMatch();
 
-public String dateProcessor(String firstName, String lastName, String email, String login,
-                           String passwordFirst, String passwordSecond, String country) throws SQLException {
 
-    User user = new User(firstName, lastName,email, login, passwordFirst, passwordSecond, country);
-    String errorStatus = "";
+    public String dateProcessorRegestrarion(String firstName, String lastName, String email, String login,
+                                            String passwordFirst, String passwordSecond, String country) throws SQLException {
 
-    errorStatus = checkDate.check(user);
-    if(!errorStatus.equals("")){
-        return errorStatus;
-    }
-    else{
-        if(!((errorStatus += сheckMatch.СheckMatchEmail(user.getEmail()) +
-                сheckMatch.СheckMatchLogin(user.getLogin())).equals(""))){
+        User user = new User(firstName, lastName, email, login, passwordFirst, passwordSecond, country);
+        String errorStatus;
+
+        errorStatus = checkDate.check(user);
+        if (!errorStatus.equals("")) {
             return errorStatus;
-        }
-        else {
-            if(!(errorStatus = addDb.add(user)).equals("")){
+        } else {
+            if (!((errorStatus += сheckMatch.СheckMatchEmail(user.getEmail()) +
+                    сheckMatch.СheckMatchLogin(user.getLogin())).equals(""))) {
+                return errorStatus;
+            } else {
+                if (!(errorStatus = addDb.add(user)).equals("")) {
+                    return errorStatus;
+                }
                 return errorStatus;
             }
+        }
+    }
+
+    public String dateProcessorLogIn(String login, String password) {
+        UserLogIn userLogIn = new UserLogIn();
+        userLogIn.setLogin(login);
+        userLogIn.setPassword(password);
+        String errorStatus;
+
+        errorStatus = checkDate.checkLogIn(userLogIn);
+
+        if (!errorStatus.equals("")) {
             return errorStatus;
         }
+        else if(!(сheckMatch.checkMatchLogIn(userLogIn.getLogin(),userLogIn.getPassword()))){
+            return "Wrong email or password";
+        }
+
+
+
+
+        return errorStatus;
     }
 }
 
-}
 
