@@ -12,9 +12,11 @@
     <title>MainPage</title>
 </head>
 <body>
-Welcome <c:out value="${Message}" default="noname"/> !
 
-<div>pidrapteloid</div>
+
+Welcome <c:out value="${MessageName}" default="noname"/> ! <br/>
+Weather <c:out value="${MessageTemp}" default="none"/> K
+
 
 </body>
 </html>

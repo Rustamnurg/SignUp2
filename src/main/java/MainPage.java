@@ -17,14 +17,15 @@ public class MainPage extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         GetWeather getWeather = new GetWeather();
-        System.out.println(getWeather.getWeather("Kazan"));
-        System.out.println("ASSASA");
+
+
         if(session.getAttribute("login") == null){
             req.getRequestDispatcher("/").forward(req, resp);
         }
         else {
 
-            req.setAttribute("Message", session.getAttribute("firstName"));
+            req.setAttribute("MessageName", session.getAttribute("firstName"));
+            req.setAttribute("MessageTemp", getWeather.getWeather("Kazan"));
 
             req.getRequestDispatcher("/MainPage.jsp").forward(req, resp);
         }
