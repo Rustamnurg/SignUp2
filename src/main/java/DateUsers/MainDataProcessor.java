@@ -2,6 +2,7 @@ package DateUsers;
 
 
 import DateUsers.DataBase.*;
+
 import User.*;
 
 import java.sql.SQLException;
@@ -42,20 +43,27 @@ public class MainDataProcessor {
         userLogIn.setLogin(login);
         userLogIn.setPassword(password);
         String errorStatus;
+        User user = new User();
 
         errorStatus = checkDate.checkLogIn(userLogIn);
 
         if (!errorStatus.equals("")) {
             return errorStatus;
         }
+//        else if(!(сheckMatch.checkMatchLogIn(userLogIn.getLogin(),userLogIn.getPassword()))){
+//            return "Wrong email or password";
+//        }
         else if(!(сheckMatch.checkMatchLogIn(userLogIn.getLogin(),userLogIn.getPassword()))){
             return "Wrong email or password";
+        }
+            else {
+            return  errorStatus;
         }
 
 
 
 
-        return errorStatus;
+
     }
 }
 

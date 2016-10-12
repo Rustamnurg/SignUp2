@@ -5,6 +5,15 @@
          version="3.1">
 
     <servlet>
+        <servlet-name>MainPage</servlet-name>
+        <servlet-class>MainPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainPage</servlet-name>
+        <url-pattern>/mainPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>MainServlet</servlet-name>
         <servlet-class>MainServlet</servlet-class>
     </servlet>
@@ -31,6 +40,8 @@
         <servlet-name>login</servlet-name>
         <url-pattern>/LogIn</url-pattern>
     </servlet-mapping>
+
+
     <!--<servlet-name>MainServlet</servlet-name>-->
     <!--<url-pattern>/</url-pattern>-->
 </web-app>

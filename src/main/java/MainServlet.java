@@ -1,4 +1,6 @@
-import DateUsers.DataBase.SearchData;
+
+
+import Functional.Weather.GetWeather;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -28,6 +30,7 @@ public class MainServlet extends HttpServlet {
         resp.setStatus(200);
         out.println(getPageCode());
 
+
     }
 
     @Override
@@ -37,6 +40,8 @@ public class MainServlet extends HttpServlet {
         resp.setStatus(200);
         PrintWriter out = resp.getWriter();
         out.println(getPageCode());
+
+
     }
 
 

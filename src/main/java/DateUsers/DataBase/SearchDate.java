@@ -1,15 +1,22 @@
 package DateUsers.DataBase;
 
-import User.*;
+/**
+ * Created by Rustam on 11.10.16.
+ */
 
-import javax.jws.soap.SOAPBinding;
-import java.sql.*;
+import java.sql.ResultSet;
+
+
+        import User.*;
+
+        import javax.jws.soap.SOAPBinding;
+        import java.sql.*;
 
 /**
  * Created by Rustam on 09.10.16.
  */
-public class SearchData {
-    public Object searchData(String login, String passwordUsers){
+public class SearchDate {
+    public User searchData(String login, String passwordUsers){
 
 
         String url = "jdbc:postgresql://localhost/users?characterEncoding=utf8";
