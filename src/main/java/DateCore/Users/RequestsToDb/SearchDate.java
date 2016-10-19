@@ -1,4 +1,4 @@
-package DateUsers.DataBase;
+package DateCore.Users.RequestsToDb;
 
 /**
  * Created by Rustam on 11.10.16.
@@ -7,10 +7,9 @@ package DateUsers.DataBase;
 import java.sql.ResultSet;
 
 
-        import User.*;
+        import Essence.*;
 
-        import javax.jws.soap.SOAPBinding;
-        import java.sql.*;
+import java.sql.*;
 
 /**
  * Created by Rustam on 09.10.16.

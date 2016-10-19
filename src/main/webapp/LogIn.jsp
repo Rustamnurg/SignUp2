@@ -1,7 +1,7 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Rustam
-  DateUsers: 30.09.16
+  Essence: Rustam
+  DateCore: 30.09.16
   Time: 12:40
   To change this template use File | Settings | File Templates.
 --%>

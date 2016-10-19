@@ -1,9 +1,9 @@
-package DateUsers;
+package DateCore.Users;
 
 
-import DateUsers.DataBase.*;
-
-import User.*;
+import DateCore.Users.RequestsToDb.AddDb;
+import DateCore.Users.RequestsToDb.СheckMatch;
+import Essence.*;
 
 import java.sql.SQLException;
 

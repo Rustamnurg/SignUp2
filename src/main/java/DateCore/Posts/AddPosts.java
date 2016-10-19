@@ -1,17 +1,21 @@
-package DateUsers.DataBase;
+package DateCore.Posts;
 
-import User.User;
+import Essence.Posts;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
- * Created by Rustam on 09.10.16.
+ * Created by Rustam on 19.10.16.
  */
-public class AddDb {
-    public String add(User user) throws SQLException {
+public class AddPosts {
+    public void addPosts(Posts posts) {
+//        Date d = new Date();
+//        SimpleDateFormat format1 = new SimpleDateFormat("dd.MM.yyyy hh:mm");
 
         Connection connection = null;
 
@@ -25,8 +29,8 @@ public class AddDb {
         try {
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection(url, name, password);
-            String sql = "INSERT INTO \"Users\" VALUES (DEFAULT, '"+ user.getFirstName() +"', '"+ user.getLastName() +"', '"+
-                    user.getEmail() +"', '"+ user.getLogin() +"', '"+ user.getPassword() +"', '"+ user.getCountry() +"')";
+            String sql = "INSERT INTO \"Posts\" VALUES (DEFAULT, '" + posts.getId_author() + "', '" + posts.getContent() + "', '" +
+                    posts.getDate() + "')";
 
             stmt = conn.createStatement();
             stmt.executeUpdate(sql);
@@ -49,7 +53,7 @@ public class AddDb {
                 }
             }
         }
-        return  "";
+
     }
 
 }

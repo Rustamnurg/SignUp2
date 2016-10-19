@@ -1,10 +1,9 @@
 
 
 
-import DateUsers.DataBase.SearchDate;
-import DateUsers.MainDataProcessor;
-import Functional.Weather.GetWeather;
-import User.User;
+import DateCore.Users.RequestsToDb.SearchDate;
+import DateCore.Users.MainDataProcessor;
+import Essence.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -13,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.SQLException;
 
 /**
  * Created by Rustam on 30.09.16.

@@ -1,6 +1,6 @@
-package DateUsers;
+package DateCore.Users;
 
-import User.*;
+import Essence.*;
 
 import java.util.regex.Pattern;
 

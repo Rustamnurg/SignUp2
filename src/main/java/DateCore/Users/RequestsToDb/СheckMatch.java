@@ -1,6 +1,4 @@
-package DateUsers.DataBase;
-
-import User.User;
+package DateCore.Users.RequestsToDb;
 
 import java.sql.*;
 
