@@ -24,11 +24,6 @@ public class LogIn extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         req.getRequestDispatcher("/LogIn.jsp").forward(req, resp);
-       // PrintWriter out = resp.getWriter();
-       // resp.setContentType("text/html;charset=UTF-8");
-       // resp.setStatus(302);
-      //  out.println(getPageCode());
-
     }
 
     @Override
@@ -58,7 +53,7 @@ public class LogIn extends HttpServlet {
             session.setAttribute("login", user.getLogin());
             session.setAttribute("password", user.getPassword());
             session.setAttribute("country", user.getCountry());
-            session.setMaxInactiveInterval(600);
+            session.setMaxInactiveInterval(5);
             resp.sendRedirect("/mainPage");
 
 

@@ -19,7 +19,7 @@ public class SearchDate {
     public User searchData(String login, String passwordUsers){
 
 
-        String url = "jdbc:postgresql://localhost/users?characterEncoding=utf8";
+        String url = "jdbc:postgresql://localhost/project?characterEncoding=utf8";
         String name = "rustam_admin";
         String password = "123321";
         Connection conn;
@@ -29,7 +29,7 @@ public class SearchDate {
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection(url, name, password);
             stmt = conn.createStatement();
-            String query = "select * from users";
+            String query = "select * from \"Users\"";
             ResultSet rs = stmt.executeQuery(query);
 
             while (rs.next()) {

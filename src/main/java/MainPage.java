@@ -18,7 +18,7 @@ public class MainPage extends HttpServlet {
         HttpSession session = req.getSession();
         GetWeather getWeather = new GetWeather();
 
-
+        System.out.println("doGet");
         if(session.getAttribute("login") == null){
             req.getRequestDispatcher("/").forward(req, resp);
         }
@@ -26,14 +26,12 @@ public class MainPage extends HttpServlet {
 
             req.setAttribute("MessageName", session.getAttribute("firstName"));
             req.setAttribute("MessageTemp", getWeather.getWeather("Kazan"));
-
             req.getRequestDispatcher("/MainPage.jsp").forward(req, resp);
         }
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
 
     }
 

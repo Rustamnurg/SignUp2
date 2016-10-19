@@ -15,7 +15,7 @@ public class AddDb {
 
         Connection connection = null;
 
-        String url = "jdbc:postgresql://localhost/users?characterEncoding=utf8";
+        String url = "jdbc:postgresql://localhost/project?characterEncoding=utf8";
         String name = "rustam_admin";
         String password = "123321";
         Connection conn = null;
@@ -25,7 +25,7 @@ public class AddDb {
         try {
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection(url, name, password);
-            String sql = "INSERT INTO users VALUES (DEFAULT, '"+ user.getFirstName() +"', '"+ user.getLastName() +"', '"+
+            String sql = "INSERT INTO \"Users\" VALUES (DEFAULT, '"+ user.getFirstName() +"', '"+ user.getLastName() +"', '"+
                     user.getEmail() +"', '"+ user.getLogin() +"', '"+ user.getPassword() +"', '"+ user.getCountry() +"')";
 
             stmt = conn.createStatement();

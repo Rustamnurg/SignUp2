@@ -28,7 +28,7 @@ public class СheckMatch {
 
 
     private boolean checkMatch(String colum, String value) {
-        String url = "jdbc:postgresql://localhost/users?characterEncoding=utf8";
+        String url = "jdbc:postgresql://localhost/project?characterEncoding=utf8";
         String name = "rustam_admin";
         String password = "123321";
         Connection conn;
@@ -39,7 +39,7 @@ public class СheckMatch {
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection(url, name, password);
             stmt = conn.createStatement();
-            String query = "SELECT " + colum + " from users";
+            String query = "SELECT " + colum + " from \"Users\"";
             ResultSet rs = stmt.executeQuery(query);
             while (rs.next()) {
                 if (rs.getString(colum).equals(value)) {
@@ -59,7 +59,7 @@ public class СheckMatch {
 
 
     public boolean checkMatchLogIn(String loginCheck, String passwordCheck){
-        String url = "jdbc:postgresql://localhost/users?characterEncoding=utf8";
+        String url = "jdbc:postgresql://localhost/project?characterEncoding=utf8";
         String name = "rustam_admin";
         String password = "123321";
         Connection conn;
@@ -70,7 +70,7 @@ public class СheckMatch {
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection(url, name, password);
             stmt = conn.createStatement();
-            String query = "SELECT login, password from users";
+            String query = "SELECT login, password from \"Users\"";
             ResultSet rs = stmt.executeQuery(query);
             while (rs.next()) {
                 if(rs.getString("login").equals(loginCheck)){
