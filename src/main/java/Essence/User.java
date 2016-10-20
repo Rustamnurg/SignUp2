@@ -4,6 +4,7 @@ package Essence;
  * Created by Rustam on 06.10.16.
  */
 public class User {
+    private int id;
     private String firstName;
     private String lastName;
     private String email;
@@ -21,10 +22,24 @@ public class User {
         this.password = password;
         this.passwordCheck = passwordCheck;
         this.country = country;
-
+    }
+    public User(int id, String firstName, String lastName, String email, String login, String password, String passwordCheck, String country) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.login = login;
+        this.password = password;
+        this.passwordCheck = passwordCheck;
+        this.country = country;
     }
     public  User(){
 
+    }
+
+    public int getId()
+    {
+        return  id;
     }
 
     public String getFirstName() {
@@ -55,6 +70,10 @@ public class User {
         return country;
     }
 
+
+    public void setId(int id){
+        this.id = id;
+    }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;

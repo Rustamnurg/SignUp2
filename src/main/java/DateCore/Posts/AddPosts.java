@@ -25,12 +25,16 @@ public class AddPosts {
         Connection conn = null;
         Statement stmt = null;
 
+        posts.setDate("2004-10-19 10:23:54+02");
+
 
         try {
+
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection(url, name, password);
             String sql = "INSERT INTO \"Posts\" VALUES (DEFAULT, '" + posts.getId_author() + "', '" + posts.getContent() + "', '" +
                     posts.getDate() + "')";
+
 
             stmt = conn.createStatement();
             stmt.executeUpdate(sql);

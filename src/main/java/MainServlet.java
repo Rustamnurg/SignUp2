@@ -39,9 +39,6 @@ public class MainServlet extends HttpServlet {
 
 
     protected String getPageCode(){
-
-        Testing testing = new Testing();
-        testing.readPosts();
         return "<a href='/registrarion'>Registration</a><br/>"
                 + "<a href='/LogIn'>Log in</a>";
 

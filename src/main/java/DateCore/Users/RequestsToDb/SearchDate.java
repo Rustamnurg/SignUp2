@@ -33,6 +33,7 @@ public class SearchDate {
 
             while (rs.next()) {
                 if(rs.getString("login").equals(login) && rs.getString("password").equals(passwordUsers)){
+                    user.setFirstName(rs.getString("id"));
                     user.setFirstName(rs.getString("firstName"));
                     user.setLastName(rs.getString("lastname"));
                     user.setEmail(rs.getString("email"));

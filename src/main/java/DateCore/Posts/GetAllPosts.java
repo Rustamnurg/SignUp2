@@ -27,11 +27,14 @@ public class GetAllPosts {
             ResultSet rs = stmt.executeQuery(query);
 
             while (rs.next()) {
-                posts.getId_posts(Integer.parseInt(rs.getString("id")));
-                posts.setId_author(Integer.parseInt(rs.getString("id_author")));
-                posts.setContent(rs.getString("content"));
-                posts.setDate(rs.getString("date"));
-                linkedList.add(posts);
+//                posts.getId_posts(Integer.parseInt(rs.getString("id")));
+//                posts.setId_author(Integer.parseInt(rs.getString("id_author")));
+//                posts.setContent(rs.getString("content"));
+//                posts.setDate(rs.getString("date"));
+              //  linkedList.add(posts);
+
+                linkedList.add(new Posts(Integer.parseInt(rs.getString("id")),Integer.parseInt(rs.getString("id_author"))
+                        ,rs.getString("content"), rs.getString("date")));
             }
 
             conn.close();

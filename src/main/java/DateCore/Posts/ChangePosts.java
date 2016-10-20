@@ -32,7 +32,6 @@ public class ChangePosts {
 
 
 
-
 //                    posts.setContent(rs.getString("content"));
 //                    posts.setDate(rs.getString("date"));
                     break;

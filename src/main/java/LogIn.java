@@ -45,13 +45,14 @@ public class LogIn extends HttpServlet {
             User user = searchDate.searchData(req.getParameter("login"), req.getParameter("password"));
 
             HttpSession session = req.getSession();
+            session.setAttribute("id", user.getId());
             session.setAttribute("firstName", user.getFirstName());
             session.setAttribute("lastname", user.getLastName());
             session.setAttribute("email", user.getEmail());
             session.setAttribute("login", user.getLogin());
             session.setAttribute("password", user.getPassword());
             session.setAttribute("country", user.getCountry());
-            session.setMaxInactiveInterval(5);
+            session.setMaxInactiveInterval(500);
             resp.sendRedirect("/mainPage");
 
 
