@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - project@localhost" uuid="b7e87b9b-e457-47ea-8393-914318b94955">
+      <database-info product="PostgreSQL" version="9.5.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>rustam_admin</user-name>
+      <introspection-scope>project:pg_catalog,public,rustam_admin</introspection-scope>
+      <resolve-scope>project:public,rustam_admin</resolve-scope>
+    </data-source>
+  </component>
+</project>

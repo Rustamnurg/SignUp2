@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7891863a-fd6a-4b2b-9475-869313fbce88" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/addPosts.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DateCore/Posts/AddPosts.java" afterPath="$PROJECT_DIR$/src/main/java/DateCore/Posts/AddPosts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DateCore/Posts/ChangePosts.java" afterPath="$PROJECT_DIR$/src/main/java/DateCore/Posts/ChangePosts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DateCore/Posts/GetAllPosts.java" afterPath="$PROJECT_DIR$/src/main/java/DateCore/Posts/GetAllPosts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DateCore/Users/RequestsToDb/SearchDate.java" afterPath="$PROJECT_DIR$/src/main/java/DateCore/Users/RequestsToDb/SearchDate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Essence/User.java" afterPath="$PROJECT_DIR$/src/main/java/Essence/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/LogIn.java" afterPath="$PROJECT_DIR$/src/main/java/LogIn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MainPage.java" afterPath="$PROJECT_DIR$/src/main/java/MainPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MainServlet.java" afterPath="$PROJECT_DIR$/src/main/java/MainServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/MainPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/MainPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="SignUp2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1174,7 +1163,7 @@
       <workItem from="1476737134725" duration="2141000" />
       <workItem from="1476867102961" duration="1463000" />
       <workItem from="1476903196646" duration="8048000" />
-      <workItem from="1476986200876" duration="12915000" />
+      <workItem from="1476986200876" duration="12947000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1475056835166</created>
@@ -1246,11 +1235,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476912397092</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add CR">
+      <created>1477004389708</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1477004389708</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156762000" />
+    <option name="totallyTimeSpent" value="156794000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1364,7 +1360,8 @@
     <MESSAGE value="Add session2" />
     <MESSAGE value="Add new DB" />
     <MESSAGE value="Add posts essence&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add posts essence&#10;" />
+    <MESSAGE value="Add CR" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CR" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
