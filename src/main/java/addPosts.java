@@ -30,7 +30,6 @@ public class addPosts extends HttpServlet {
         AddPosts addPosts = new AddPosts();
         HttpSession session = req.getSession();
 
-
         posts.setId_author(Integer.parseInt(session.getAttribute("id").toString()));
         posts.setContent(req.getParameter("content"));
         addPosts.addPosts(posts);
