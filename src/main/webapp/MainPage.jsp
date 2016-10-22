@@ -21,9 +21,9 @@
 Welcome <c:out value="${MessageName}" default="noname"/> ! <br/>
 Weather <c:out value="${MessageTemp}" default="none"/>
 
-<form id="form" action="<c:url value="/AddPostsServlet"/>" method='post'>
+<form id="form" action="<c:url value="/buttonsHandler"/>" method='post'>
     <textarea name="content" cols="20" rows="3" wrap="off"></textarea><br>
-    <p><input type="submit"></p>
+    <p><input type="submit" value="add" name="add"></p>
 </form>
 
 
@@ -31,10 +31,12 @@ Weather <c:out value="${MessageTemp}" default="none"/>
    <div class="content" class = "'${posts.getId_posts()}'">
        <p>${posts.getContent()}</p>
        <p>${posts.getDate()}</p>
-       <form id="formWorkWithPosts" action="<c:url value="/"/>" method='post'>
-           <p><input type="submit" value="Редактировать " name="edit">
-               <input type="submit" value="Понравилось" name="remove"> 3</p>
-           <input type="submit" value="Понравилось" name="like"> 3</p>
+       <form id="formWorkWithPosts" action="<c:url value="/buttonsHandler"/>" method='post'>
+           <p>
+               <input type="submit" value="Edit" name="Edit">
+               <input type="submit" value="Delete" name="Delete">
+               <input type="submit" value="Like" name="Like"> 3
+           </p>
        </form>
        <br/> <br/>
     </div>

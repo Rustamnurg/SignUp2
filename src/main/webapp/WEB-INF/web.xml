@@ -14,12 +14,12 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>addPosts</servlet-name>
-        <servlet-class>AddPostsServlet</servlet-class>
+        <servlet-name>ButtonsHandler</servlet-name>
+        <servlet-class>ButtonsHandler</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>addPosts</servlet-name>
-        <url-pattern>/AddPostsServlet</url-pattern>
+        <servlet-name>ButtonsHandler</servlet-name>
+        <url-pattern>/buttonsHandler</url-pattern>
     </servlet-mapping>
 
     <servlet>

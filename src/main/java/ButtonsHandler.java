@@ -1,5 +1,5 @@
+
 import DateCore.Posts.AddPosts;
-import DateCore.Posts.GetAllPosts;
 import Essence.Posts;
 import Functional.Weather.GetWeather;
 
@@ -13,7 +13,7 @@ import java.io.IOException;
 /**
  * Created by Rustam on 21.10.16.
  */
-public class AddPostsServlet extends HttpServlet {
+public class ButtonsHandler extends HttpServlet {
 
 
     @Override
@@ -30,13 +30,28 @@ public class AddPostsServlet extends HttpServlet {
         AddPosts addPosts = new AddPosts();
         HttpSession session = req.getSession();
 
-        posts.setId_author(Integer.parseInt(session.getAttribute("id").toString()));
-        System.out.println(session.getAttribute("id").toString());
-        posts.setContent(req.getParameter("content"));
-        addPosts.addPosts(posts);
+        if(req.getParameter("add") != null) {
+            posts.setId_author(Integer.parseInt(session.getAttribute("id").toString()));
+            posts.setContent(req.getParameter("content"));
+            addPosts.addPosts(posts);
 
+        } else if (req.getParameter("Delete") != null) {
+            System.out.println("Delete");
+
+        }
+        else if (req.getParameter("Edit") != null) {
+        System.out.println("Edit");
+        }
+        else if (req.getParameter("Like") != null) {
+        System.out.println("Like");
+        }
+        else{
+            System.out.println("No(");
+        }
         resp.sendRedirect("/mainPage");
     }
+
+
 
 }
 
