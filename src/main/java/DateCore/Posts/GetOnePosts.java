@@ -27,7 +27,7 @@ public class GetOnePosts {
 
             while (rs.next()) {
                 if((Integer.parseInt(rs.getString("id")) == id)){
-                    posts.getId_posts(Integer.parseInt(rs.getString("id")));
+                    posts.setId_posts(Integer.parseInt(rs.getString("id")));
                     posts.setId_author(Integer.parseInt(rs.getString("id_author")));
                     posts.setContent(rs.getString("content"));
                     posts.setDate(rs.getString("date"));

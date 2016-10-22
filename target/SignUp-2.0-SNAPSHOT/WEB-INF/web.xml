@@ -15,11 +15,11 @@
 
     <servlet>
         <servlet-name>addPosts</servlet-name>
-        <servlet-class>addPosts</servlet-class>
+        <servlet-class>AddPostsServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>addPosts</servlet-name>
-        <url-pattern>/addPosts</url-pattern>
+        <url-pattern>/AddPostsServlet</url-pattern>
     </servlet-mapping>
 
     <servlet>

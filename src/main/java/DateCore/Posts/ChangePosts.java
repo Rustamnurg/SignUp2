@@ -9,7 +9,7 @@ import java.util.LinkedList;
  * Created by Rustam on 20.10.16.
  */
 public class ChangePosts {
-    public Posts changePosts(int id){
+    public Posts changePosts(int id, String changeContent){
         String url = "jdbc:postgresql://localhost/project?characterEncoding=utf8";
         String name = "rustam_admin";
         String password = "123321";
@@ -23,20 +23,9 @@ public class ChangePosts {
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection(url, name, password);
             stmt = conn.createStatement();
-            String query = "select * from \"Posts\"";
-            ResultSet rs = stmt.executeQuery(query);
 
-            while (rs.next()) {
-                if((Integer.parseInt(rs.getString("id")) == id)){
+            stmt.executeUpdate("UPDATE \"Posts\" SET content = '"+ changeContent +"' WHERE id = " + id);
 
-
-
-
-//                    posts.setContent(rs.getString("content"));
-//                    posts.setDate(rs.getString("date"));
-                    break;
-                }
-            }
             conn.close();
             return posts;
         } catch (SQLException | ClassNotFoundException e) {

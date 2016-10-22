@@ -1,13 +1,13 @@
 package DateCore.Posts;
 
 import Essence.Posts;
+import Other.GetTimeNow;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
 
 /**
  * Created by Rustam on 19.10.16.
@@ -25,16 +25,14 @@ public class AddPosts {
         Connection conn = null;
         Statement stmt = null;
 
-        posts.setDate("2004-10-19 10:23:54+02");
-
+        GetTimeNow getTimeNow = new GetTimeNow();
+        posts.setDate(getTimeNow.getDate());
 
         try {
-
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection(url, name, password);
             String sql = "INSERT INTO \"Posts\" VALUES (DEFAULT, '" + posts.getId_author() + "', '" + posts.getContent() + "', '" +
                     posts.getDate() + "')";
-
 
             stmt = conn.createStatement();
             stmt.executeUpdate(sql);

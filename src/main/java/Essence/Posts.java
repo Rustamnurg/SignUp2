@@ -13,8 +13,6 @@ public class Posts {
         this.id_author = id_author;
         this.content = content;
         this.date = date;
-
-
     }
     public Posts(int id_posts, int id_author, String content, String date) {
         this.id_posts = id_posts;
@@ -28,7 +26,7 @@ public class Posts {
 
     }
 
-    public int getId_posts(int id){
+    public int getId_posts(){
         return id_posts;
     }
 

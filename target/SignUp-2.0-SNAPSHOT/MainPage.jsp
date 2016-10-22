@@ -21,16 +21,22 @@
 Welcome <c:out value="${MessageName}" default="noname"/> ! <br/>
 Weather <c:out value="${MessageTemp}" default="none"/>
 
-    <form id="form" action="<c:url value="/addPosts"/>" method='post'>
+<form id="form" action="<c:url value="/AddPostsServlet"/>" method='post'>
     <textarea name="content" cols="20" rows="3" wrap="off"></textarea><br>
     <p><input type="submit"></p>
 </form>
 
 
 <c:forEach var="posts" items="${linkedList}">
-    <p>${posts.getContent()}</p>
-    <p>${posts.getDate()}</p>
-    <br/>
+   <div class="content" class = "'${posts.getId_posts()}'">
+       <p>${posts.getContent()}</p>
+       <p>${posts.getDate()}</p>
+       <form id="formWorkWithPosts" action="<c:url value="/"/>" method='post'>
+           <p><input type="submit" value="Редактировать">
+               <input type="submit" value="Понравилось"> 3</p>
+       </form>
+       <br/> <br/>
+    </div>
 </c:forEach>
 
 

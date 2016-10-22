@@ -1,7 +1,5 @@
 
 
-import Essence.Testing;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -34,11 +32,10 @@ public class MainServlet extends HttpServlet {
         PrintWriter out = resp.getWriter();
         out.println(getPageCode());
 
-
     }
 
 
-    protected String getPageCode(){
+    private String getPageCode(){
         return "<a href='/registrarion'>Registration</a><br/>"
                 + "<a href='/LogIn'>Log in</a>";
 
