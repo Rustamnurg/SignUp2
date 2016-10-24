@@ -1,5 +1,7 @@
 
 import DateCore.Posts.AddPosts;
+import DateCore.Posts.ChangePosts;
+import DateCore.Posts.DeletePosts;
 import Essence.Posts;
 import Functional.Weather.GetWeather;
 
@@ -29,18 +31,20 @@ public class ButtonsHandler extends HttpServlet {
         Posts posts = new Posts();
         AddPosts addPosts = new AddPosts();
         HttpSession session = req.getSession();
-
         if(req.getParameter("add") != null) {
             posts.setId_author(Integer.parseInt(session.getAttribute("id").toString()));
             posts.setContent(req.getParameter("content"));
             addPosts.addPosts(posts);
-
         } else if (req.getParameter("Delete") != null) {
-            System.out.println("Delete");
-
+            DeletePosts deletePosts = new DeletePosts();
+            System.out.println(req.getParameter("idPosts"));
+            deletePosts.deletePosts(Integer.parseInt(req.getParameter("idPosts")));
         }
         else if (req.getParameter("Edit") != null) {
-        System.out.println("Edit");
+            req.getParameter("idPosts");
+          //  resp.
+//            ChangePosts changePosts = new ChangePosts();
+//            changePosts.changePosts()
         }
         else if (req.getParameter("Like") != null) {
         System.out.println("Like");
