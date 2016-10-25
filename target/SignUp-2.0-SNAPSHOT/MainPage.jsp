@@ -20,8 +20,8 @@
 
 
 Welcome <c:out value="${MessageName}" default="noname"/> ! <br/>
-Weather <c:out value="${idUsers}" default="none"/>
-<%--MessageTemp--%>
+Weather <c:out value="${MessageTemp}" default="none"/>  ${MessageTemp}${MessageTemp}
+
 
 
 <form id="form" action="<c:url value="/buttonsHandler"/>" method='post'>
