@@ -27,13 +27,16 @@ public class GetAllPosts {
             ResultSet rs = stmt.executeQuery(query);
 
             while (rs.next()) {
-                linkedList.add(new Posts(Integer.parseInt(rs.getString("id")),Integer.parseInt(rs.getString("id_author"))
+                linkedList.addFirst(new Posts(Integer.parseInt(rs.getString("id")),Integer.parseInt(rs.getString("id_author"))
                         ,rs.getString("content"), rs.getString("date")));
             }
 
 
 
             conn.close();
+
+
+
             return  linkedList;
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();

@@ -9,7 +9,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-
+<style>
+    <%@include file='css/style.css' %>
+</style>
 <html>
 <head>
     <title>MainPage</title>
@@ -18,7 +20,8 @@
 
 
 Welcome <c:out value="${MessageName}" default="noname"/> ! <br/>
-Weather <c:out value="${MessageTemp}" default="none"/>
+Weather <c:out value="${idUsers}" default="none"/>
+<%--MessageTemp--%>
 
 
 <form id="form" action="<c:url value="/buttonsHandler"/>" method='post'>
@@ -34,28 +37,31 @@ Weather <c:out value="${MessageTemp}" default="none"/>
         <form id="formWorkWithPosts" action="<c:url value="/buttonsHandler"/>" method='post'>
             <p>
                 <input type="hidden" value=${posts.getId_posts()} name="idPosts">
-                <c:if test="${idUsers}">
-                    <button name="Edit" class=button-for-jquery">Edit</button>
+                <c:if test="${posts.getId_author() == idUsers}">
+                    <input type="submit" value="Edit" name="Edit" class=button-for-jquery">
                     <input type="submit" value="Delete" name="Delete">
+                    <%--<textarea name="edit-field" class="field-jquery" style="display: none;" cols="20" rows="3"--%>
+                              <%--wrap="off"></textarea><br>--%>
                 </c:if>
                 <input type="submit" value="Like" name="Like"> 3
             </p><br>
-            <textarea name="edit-field" class="field-jquery"  cols="20" rows="3"
-                      wrap="off"></textarea><br>
+
+
+
         </form>
         <br/> <br/>
     </div>
 </c:forEach>
 
 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"
-        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<%--<script src="https://code.jquery.com/jquery-3.1.1.min.js"--%>
+        <%--integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>--%>
 
-<script>
-    $('.button-for-jquery').click(function() {
-        $('.field-jquery').hide(500);
-    });
-</script>
+<%--<script>--%>
+    <%--$('.button-for-jquery').click(function() {--%>
+        <%--$('.field-jquery').toggle(500);--%>
+    <%--});--%>
+<%--</script>--%>
 
 </body>
 </html>

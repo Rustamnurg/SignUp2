@@ -36,7 +36,8 @@ public class MainPage extends HttpServlet {
 
 
 
-            req.setAttribute("idUsers", true);
+            req.setAttribute("idUsers", session.getAttribute("id"));
+            System.out.println(req.getAttribute("id"));
 
             req.setAttribute("linkedList", getAllPosts.getAllPosts());
             req.getRequestDispatcher("/MainPage.jsp").forward(req, resp);

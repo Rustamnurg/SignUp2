@@ -8,7 +8,6 @@ public class Posts {
     private int id_posts;
     private String content;
     private String date;
-    private boolean isAutor;
 
     public Posts(int id_author, String content, String date) {
         this.id_author = id_author;
@@ -21,15 +20,6 @@ public class Posts {
         this.content = content;
         this.date = date;
 
-
-
-    }
-    public Posts(int id_posts, int id_author, String content, String date, boolean isAutor) {
-        this.id_posts = id_posts;
-        this.id_author = id_author;
-        this.content = content;
-        this.date = date;
-        this.isAutor = isAutor;
 
     }
     public Posts(){
@@ -52,9 +42,6 @@ public class Posts {
         return  date;
     }
 
-    public boolean getIsAutor(){
-        return isAutor;
-    }
 
     public void setId_posts(int id_posts){
         this.id_posts = id_posts;
