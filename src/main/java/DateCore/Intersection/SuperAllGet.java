@@ -43,7 +43,7 @@ public class SuperAllGet {
 
                 linkedList.addFirst(new SuperAll(Integer.parseInt(rs.getString("id")),
                         Integer.parseInt(rs.getString("id_author")),rs.getString("content"),
-                        rs.getString("date"), editable, "loginAutor", true, 5));
+                        rs.getString("date"), editable, "loginAutor", false, 5));
             }
 
 

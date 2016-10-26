@@ -44,12 +44,11 @@ Weather <c:out value="${MessageTemp}" default="none"/>
                               <%--wrap="off"></textarea><br>--%>
                 </c:if>
                 <c:if test="${posts.getIsLikes()}">
-                <input type="submit" value="Like" name="Like"> ${posts.getLikes()}++
+                <input type="submit" value="Like" name="Like"> ${posts.getLikes()}--
                 </c:if>
                 <c:if test="${!posts.getIsLikes()}">
-                    <input type="submit" value="Like" name="Like"> ${posts.getLikes()}--
+                    <input type="submit" value="Like" name="Like"> ${posts.getLikes()}++
                 </c:if>
-    ${ posts.getIsLikes()}${ posts.getIsLikes()}
             </p><br>
         </form>
         <br/> <br/>

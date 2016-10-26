@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7891863a-fd6a-4b2b-9475-869313fbce88" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DateCore/Likes/AddLikes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DateCore/Likes/GetLikes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Essence/SuperAll.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/ButtonsHandler.class" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/ButtonsHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/MainPage.class" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/MainPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ButtonsHandler.class" afterPath="$PROJECT_DIR$/target/classes/ButtonsHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/MainPage.class" afterPath="$PROJECT_DIR$/target/classes/MainPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ButtonsHandler.java" afterPath="$PROJECT_DIR$/src/main/java/ButtonsHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MainPage.java" afterPath="$PROJECT_DIR$/src/main/java/MainPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java" afterPath="$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/MainPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/MainPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/MainPage.jsp" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/MainPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/css/style.css" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="SignUp2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,7 +65,7 @@
       <file leaf-file-name="MainPage.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/MainPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
+            <state relative-caret-position="378">
               <caret line="49" column="88" selection-start-line="49" selection-start-column="88" selection-end-line="49" selection-end-column="88" />
               <folding />
             </state>
@@ -123,12 +107,22 @@
       <file leaf-file-name="SuperAllGet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="45" column="74" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
+            <state relative-caret-position="157">
+              <caret line="45" column="75" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1477513438000" expanded="true" signature="977:1000" ph="select * fro... Posts" />
+                <marker date="1477514748000" expanded="true" signature="977:1000" ph="select * fro... Posts" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SignUp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -170,16 +164,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Essence/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -1298,7 +1282,7 @@
       <workItem from="1477420220216" duration="4272000" />
       <workItem from="1477470172885" duration="1918000" />
       <workItem from="1477476347306" duration="1311000" />
-      <workItem from="1477503137906" duration="8167000" />
+      <workItem from="1477503137906" duration="8432000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1475056835166</created>
@@ -1419,11 +1403,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477397014572</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="changed output architecture(SuperAll)">
+      <created>1477514690487</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1477514690487</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208941000" />
+    <option name="totallyTimeSpent" value="209206000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1544,7 +1535,8 @@
     <MESSAGE value="ADD CRUD 63%" />
     <MESSAGE value="ADD CRUD 83%" />
     <MESSAGE value="ADD CRUD 84%" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD CRUD 84%" />
+    <MESSAGE value="changed output architecture(SuperAll)" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed output architecture(SuperAll)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1833,16 +1825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SignUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1987,19 +1969,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="45" column="74" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
+        <state relative-caret-position="157">
+          <caret line="45" column="75" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1477513438000" expanded="true" signature="977:1000" ph="select * fro... Posts" />
+            <marker date="1477514748000" expanded="true" signature="977:1000" ph="select * fro... Posts" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SignUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+        <state relative-caret-position="-68">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -2012,9 +1994,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/MainPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
+        <state relative-caret-position="378">
           <caret line="49" column="88" selection-start-line="49" selection-start-column="88" selection-end-line="49" selection-end-column="88" />
           <folding />
         </state>
