@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7891863a-fd6a-4b2b-9475-869313fbce88" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java" afterPath="$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/DateCore/Intersection/SuperAllGet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/DateCore/Likes/AddLikes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/DateCore/Likes/GetLikes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/Essence/SuperAll.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/DateCore/Intersection/SuperAllGet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/DateCore/Likes/AddLikes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/DateCore/Likes/GetLikes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Essence/SuperAll.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/MainPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/MainPage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="SignUp2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,8 +73,8 @@
       <file leaf-file-name="MainPage.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/MainPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="49" column="88" selection-start-line="49" selection-start-column="88" selection-end-line="49" selection-end-column="88" />
+            <state relative-caret-position="270">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -1282,7 +1290,7 @@
       <workItem from="1477420220216" duration="4272000" />
       <workItem from="1477470172885" duration="1918000" />
       <workItem from="1477476347306" duration="1311000" />
-      <workItem from="1477503137906" duration="8432000" />
+      <workItem from="1477503137906" duration="8620000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1475056835166</created>
@@ -1410,11 +1418,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477514690487</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="changed output architecture(SuperAll)">
+      <created>1477514853324</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1477514853324</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209206000" />
+    <option name="totallyTimeSpent" value="209394000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2004,8 +2019,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/MainPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="49" column="88" selection-start-line="49" selection-start-column="88" selection-end-line="49" selection-end-column="88" />
+        <state relative-caret-position="270">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding />
         </state>
       </provider>

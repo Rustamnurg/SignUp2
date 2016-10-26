@@ -86,7 +86,7 @@ Weather <c:out value="${MessageTemp}" default="none"/>
 <%--alert("Данная строка соответсвует заявленому патерну");--%>
 
 <%--}--%>
-</body>
+
 
 
 <%--<script src="https://code.jquery.com/jquery-3.1.1.min.js"--%>
