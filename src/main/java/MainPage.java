@@ -1,6 +1,8 @@
 
+import DateCore.Intersection.SuperAllGet;
 import DateCore.Posts.DeletePosts;
 import DateCore.Posts.GetAllPosts;
+import Essence.SuperAll;
 import Functional.Weather.GetWeather;
 
 import javax.servlet.ServletException;
@@ -33,13 +35,17 @@ public class MainPage extends HttpServlet {
             req.setAttribute("MessageTemp", getWeather.getWeather("Kazan"));
 
             GetAllPosts getAllPosts = new GetAllPosts();
+            SuperAllGet superAllGet = new SuperAllGet();
 
 
 
-            req.setAttribute("idUsers", session.getAttribute("id"));
-            System.out.println(req.getAttribute("id"));
+//            req.setAttribute("idUsers", session.getAttribute("id"));
+//            req.setAttribute("linkedList", getAllPosts.getAllPosts());
 
-            req.setAttribute("linkedList", getAllPosts.getAllPosts());
+
+            req.setAttribute("linkedList", superAllGet.superAllGet(Integer.parseInt(session.getAttribute("id").toString())));
+
+
             req.getRequestDispatcher("/MainPage.jsp").forward(req, resp);
 
         }

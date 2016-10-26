@@ -37,7 +37,6 @@ public class ButtonsHandler extends HttpServlet {
             addPosts.addPosts(posts);
         } else if (req.getParameter("Delete") != null) {
             DeletePosts deletePosts = new DeletePosts();
-            System.out.println(req.getParameter("idPosts"));
             deletePosts.deletePosts(Integer.parseInt(req.getParameter("idPosts")));
         }
         else if (req.getParameter("Edit") != null) {
@@ -48,6 +47,9 @@ public class ButtonsHandler extends HttpServlet {
         }
         else if (req.getParameter("Like") != null) {
         System.out.println("Like");
+        }
+        else if(req.getParameter("Like") != null){
+
         }
         else{
             System.out.println("No(");
