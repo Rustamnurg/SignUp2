@@ -13,7 +13,8 @@ import java.sql.SQLException;
 /**
  * Created by Rustam on 25.09.16.
  */
-public class SignUp extends HttpServlet {
+public class
+SignUp extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher("/signUpPages.jsp").forward(req, resp);

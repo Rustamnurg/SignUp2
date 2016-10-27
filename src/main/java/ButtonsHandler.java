@@ -40,14 +40,14 @@ public class ButtonsHandler extends HttpServlet {
         switch (req.getParameter("action")) {
 
             case ("Add"):
-//                posts.setId_author(Integer.parseInt(session.getAttribute("id").toString()));
-//                posts.setContent(req.getParameter("content"));
-//                addPosts.addPosts(posts);
+                posts.setId_author(Integer.parseInt(session.getAttribute("idUsers").toString()));
+                posts.setContent(req.getParameter("content"));
+                addPosts.addPosts(posts);
                 System.out.println("add");
                 break;
             case ("Delete"):
-//                DeletePosts deletePosts = new DeletePosts();
-//                deletePosts.deletePosts(Integer.parseInt(req.getParameter("idPosts")));
+                DeletePosts deletePosts = new DeletePosts();
+                deletePosts.deletePosts(Integer.parseInt(req.getParameter("idPosts")));
                 System.out.println("del");
                 break;
             case ("AddLikes"):

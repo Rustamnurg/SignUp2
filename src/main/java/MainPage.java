@@ -39,8 +39,7 @@ public class MainPage extends HttpServlet {
             SuperAllGet superAllGet = new SuperAllGet();
 
 
-            req.setAttribute("linkedList", superAllGet.superAllGet(Integer.parseInt(session.getAttribute("idUsers").toString()),
-                    session.getAttribute("login").toString()));
+            req.setAttribute("linkedList", superAllGet.superAllGet(Integer.parseInt(session.getAttribute("idUsers").toString())));
 
 
             req.getRequestDispatcher("/MainPage.jsp").forward(req, resp);

@@ -1,5 +1,7 @@
 package DateCore.Intersection;
 
+import DateCore.Likes.GetCountLikes;
+import DateCore.Users.RequestsToDb.GetLoginFromUsers;
 import Essence.Posts;
 import Essence.SuperAll;
 
@@ -12,7 +14,7 @@ import java.util.LinkedList;
 public class SuperAllGet {
 
 
-    public LinkedList<SuperAll> superAllGet(int idUsers, String autorLogin){
+    public LinkedList<SuperAll> superAllGet(int idUsers){
         String url = "jdbc:postgresql://localhost/project?characterEncoding=utf8";
         String name = "rustam_admin";
         String password = "123321";
@@ -25,7 +27,9 @@ public class SuperAllGet {
 //        boolean isLikes, int likes) {
 
         SuperAllGet superAllGet = new SuperAllGet();
+        GetLoginFromUsers getLoginFromUsers = new GetLoginFromUsers();
         LinkedList<SuperAll> linkedList = new LinkedList<>();
+        GetCountLikes getCountLikes = new GetCountLikes();
 
         try {
             Class.forName("org.postgresql.Driver");
@@ -39,11 +43,16 @@ public class SuperAllGet {
                 if(idUsers ==  Integer.parseInt(rs.getString("id_author"))){
                  editable = true;
                 }
+                else {
+                    editable = false;
+                }
 
 
                 linkedList.addFirst(new SuperAll(Integer.parseInt(rs.getString("id")),
                         Integer.parseInt(rs.getString("id_author")),rs.getString("content"),
-                        rs.getString("date"), editable, autorLogin, false, 5));
+                        rs.getString("date"), editable,
+                        getLoginFromUsers.getLoginFromUsers( Integer.parseInt(rs.getString("id_author"))),
+                        false, getCountLikes.getCountLikes(Integer.parseInt(rs.getString("id")))));
             }
 
 

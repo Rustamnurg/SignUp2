@@ -1,4 +1,5 @@
 import DateCore.Likes.AddLikes;
+import DateCore.Likes.GetCountLikes;
 import Essence.Likes;
 
 import javax.servlet.ServletException;
@@ -22,9 +23,8 @@ public class Testing extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        Likes likes = new Likes(1, 1);
-        AddLikes addLikes = new AddLikes();
-        addLikes.addLikes(likes);
+        GetCountLikes getCountLikes = new GetCountLikes();
+
 
     }
 }

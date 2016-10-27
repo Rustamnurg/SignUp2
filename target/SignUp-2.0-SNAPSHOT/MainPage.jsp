@@ -35,6 +35,7 @@ Weather <c:out value="${MessageTemp}" default="none"/>
         <p>${posts.getLoginAutor()} ${posts.getDate()} </p>
         <form id="formWorkWithPosts" action="<c:url value="/buttonsHandler"/>" method='post'  value="null" name="action" >
             <p>
+
                 <input type="hidden" value=${posts.getId_posts()} name="idPosts">
                 <c:if test="${posts.getIsEditable()}">
                     <input type="submit" value="Edit" name="action" class=button-for-jquery">
@@ -43,13 +44,15 @@ Weather <c:out value="${MessageTemp}" default="none"/>
                     <%--wrap="off"></textarea><br>--%>
                 </c:if>
                 <c:if test="${posts.getIsLikes()}">
-                    <input type="submit" value="DeleteLikes" name="action"> ${posts.getLikes()}--
+                    <input type="submit" value="DeleteLikes" name="action"> ${posts.getLikes()}
 
                 </c:if>
                 <c:if test="${!posts.getIsLikes()}">
-                    <input type="submit" value="AddLikes" name="action"> ${posts.getLikes()}++
+                    <input type="submit" value="AddLikes" name="action"> ${posts.getLikes()}
                 </c:if>
+                    ${posts.getIsEditable()}${posts.getIsEditable()}${posts.getIsEditable()}
             </p><br>
+
         </form>
         <br/> <br/>
     </div>
