@@ -40,7 +40,7 @@ public class GetWeather {
             in.read();
             in.close();
 
-            return  str;
+            return  String.format("%.2f", Double.parseDouble(str) - 273.15);
 
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
@@ -49,6 +49,6 @@ public class GetWeather {
         } catch (NullPointerException ex) {
             ex.printStackTrace();
         }
-        return "";
+        return null;
     }
 }

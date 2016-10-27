@@ -24,8 +24,7 @@ public class MainPage extends HttpServlet {
         HttpSession session = req.getSession();
         GetWeather getWeather = new GetWeather();
 
-        DeletePosts deletePosts = new DeletePosts();
-        deletePosts.deletePosts(42);
+
 
 
         if (session.getAttribute("login") == null) {

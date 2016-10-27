@@ -67,6 +67,9 @@ public class ButtonsHandler extends HttpServlet {
             case ("Edit"):
                 System.out.println("Edit");
                 break;
+            case ("EditSend"):
+                System.out.println("ES");
+                break;
 
 
         }
@@ -91,6 +94,7 @@ public class ButtonsHandler extends HttpServlet {
 //        else{
 //            System.out.println("No(");
 //        }
+
         resp.sendRedirect("/mainPage");
     }
 

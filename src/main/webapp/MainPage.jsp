@@ -37,11 +37,15 @@ Weather <c:out value="${MessageTemp}" default="none"/>
             <p>
 
                 <input type="hidden" value=${posts.getId_posts()} name="idPosts">
+                <c:if test="${edit}">
+                   <p></p> <textarea name="edit-field" cols="20" rows="3"
+                              wrap="off"></textarea><br>
+                    <input type="submit" value="EditSend" name="action"></p>
+                </c:if>
+
                 <c:if test="${posts.getIsEditable()}">
                     <input type="submit" value="Edit" name="action" class=button-for-jquery">
                     <input type="submit" value="Delete" name="action">
-                    <%--<textarea name="edit-field" class="field-jquery" style="display: none;" cols="20" rows="3"--%>
-                    <%--wrap="off"></textarea><br>--%>
                 </c:if>
                 <c:if test="${posts.getIsLikes()}">
                     <input type="submit" value="DeleteLikes" name="action"> ${posts.getLikes()}
