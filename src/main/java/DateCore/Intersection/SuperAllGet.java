@@ -1,5 +1,6 @@
 package DateCore.Intersection;
 
+import DateCore.Likes.CheckIsLikes;
 import DateCore.Likes.GetCountLikes;
 import DateCore.Users.RequestsToDb.GetLoginFromUsers;
 import Essence.Posts;
@@ -14,7 +15,7 @@ import java.util.LinkedList;
 public class SuperAllGet {
 
 
-    public LinkedList<SuperAll> superAllGet(int idUsers){
+    public LinkedList<SuperAll> superAllGet(int idUsers) {
         String url = "jdbc:postgresql://localhost/project?characterEncoding=utf8";
         String name = "rustam_admin";
         String password = "123321";
@@ -28,6 +29,7 @@ public class SuperAllGet {
 
         SuperAllGet superAllGet = new SuperAllGet();
         GetLoginFromUsers getLoginFromUsers = new GetLoginFromUsers();
+        CheckIsLikes checkIsLikes = new CheckIsLikes();
         LinkedList<SuperAll> linkedList = new LinkedList<>();
         GetCountLikes getCountLikes = new GetCountLikes();
 
@@ -40,28 +42,25 @@ public class SuperAllGet {
 
             while (rs.next()) {
 
-                if(idUsers ==  Integer.parseInt(rs.getString("id_author"))){
-                 editable = true;
-                }
-                else {
+                if (idUsers == Integer.parseInt(rs.getString("id_author"))) {
+                    editable = true;
+                } else {
                     editable = false;
                 }
 
-
                 linkedList.addFirst(new SuperAll(Integer.parseInt(rs.getString("id")),
-                        Integer.parseInt(rs.getString("id_author")),rs.getString("content"),
+                        Integer.parseInt(rs.getString("id_author")), rs.getString("content"),
                         rs.getString("date"), editable,
-                        getLoginFromUsers.getLoginFromUsers( Integer.parseInt(rs.getString("id_author"))),
-                        false, getCountLikes.getCountLikes(Integer.parseInt(rs.getString("id")))));
+                        getLoginFromUsers.getLoginFromUsers(Integer.parseInt(rs.getString("id_author"))),
+                        checkIsLikes.checkIsLikes(Integer.parseInt(rs.getString("id")), idUsers),
+                        getCountLikes.getCountLikes(Integer.parseInt(rs.getString("id")))));
             }
-
 
 
             conn.close();
 
 
-
-            return  linkedList;
+            return linkedList;
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }

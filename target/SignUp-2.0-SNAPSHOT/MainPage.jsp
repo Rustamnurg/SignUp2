@@ -50,7 +50,6 @@ Weather <c:out value="${MessageTemp}" default="none"/>
                 <c:if test="${!posts.getIsLikes()}">
                     <input type="submit" value="AddLikes" name="action"> ${posts.getLikes()}
                 </c:if>
-                    ${posts.getIsEditable()}${posts.getIsEditable()}${posts.getIsEditable()}
             </p><br>
 
         </form>

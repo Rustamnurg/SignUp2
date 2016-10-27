@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7891863a-fd6a-4b2b-9475-869313fbce88" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DateCore/Likes/GetCountLikes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DateCore/Users/RequestsToDb/GetLoginFromUsers.java" />
+    <list default="true" id="7891863a-fd6a-4b2b-9475-869313fbce88" name="Default" comment="Add">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DateCore/Likes/CheckIsLikes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/ButtonsHandler.class" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/ButtonsHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/DateCore/Intersection/SuperAllGet.class" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/DateCore/Intersection/SuperAllGet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/MainPage.class" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/MainPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/SignUp.class" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/SignUp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ButtonsHandler.class" afterPath="$PROJECT_DIR$/target/classes/ButtonsHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DateCore/Intersection/SuperAllGet.class" afterPath="$PROJECT_DIR$/target/classes/DateCore/Intersection/SuperAllGet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/MainPage.class" afterPath="$PROJECT_DIR$/target/classes/MainPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/SignUp.class" afterPath="$PROJECT_DIR$/target/classes/SignUp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ButtonsHandler.java" afterPath="$PROJECT_DIR$/src/main/java/ButtonsHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java" afterPath="$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DateCore/Posts/GetOnePosts.java" afterPath="$PROJECT_DIR$/src/main/java/DateCore/Posts/GetOnePosts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/LogIn.java" afterPath="$PROJECT_DIR$/src/main/java/LogIn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MainPage.java" afterPath="$PROJECT_DIR$/src/main/java/MainPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MainServlet.java" afterPath="$PROJECT_DIR$/src/main/java/MainServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SignUp.java" afterPath="$PROJECT_DIR$/src/main/java/SignUp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Testing.java" afterPath="$PROJECT_DIR$/src/main/java/Testing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/MainPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/MainPage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/MainPage.jsp" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/MainPage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
@@ -123,12 +107,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainPage.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainPage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/MainPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+            <state relative-caret-position="210">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddLikes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Likes/AddLikes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+              <folding>
+                <marker date="1477516956000" expanded="true" signature="808:909" ph="INSERT INTO \&quot;Likes\&quot;... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,22 +174,12 @@
       <file leaf-file-name="GetCountLikes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Likes/GetCountLikes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1477603464000" expanded="true" signature="768:791" ph="select * fro... Likes" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetLikes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Likes/GetLikes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -208,26 +194,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetOnePosts.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Posts/GetOnePosts.java">
+      <file leaf-file-name="SuperAllGet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="120">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
-                <marker date="1477602887000" expanded="true" signature="653:676" ph="select * fro... Posts" />
-                <marker date="1477602887000" expanded="true" signature="1871:1894" ph="select * fro... Posts" />
+                <marker date="1477604872000" expanded="true" signature="1291:1314" ph="select * fro... Posts" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SuperAllGet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java">
+      <file leaf-file-name="CheckIsLikes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Likes/CheckIsLikes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="25" />
               <folding>
-                <marker date="1477604294000" expanded="true" signature="1198:1221" ph="select * fro... Posts" />
+                <marker date="1477604750000" expanded="true" signature="741:764" ph="select * fro... Likes" />
               </folding>
             </state>
           </provider>
@@ -269,7 +254,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/signUpPages.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/User/Testing.java" />
         <option value="$PROJECT_DIR$/src/main/java/User/Posts.java" />
         <option value="$PROJECT_DIR$/src/main/java/DateCore/Users/RequestsToDB/СheckMatch.java" />
@@ -318,8 +302,9 @@
         <option value="$PROJECT_DIR$/src/main/java/DateCore/Posts/GetOnePosts.java" />
         <option value="$PROJECT_DIR$/src/main/java/ButtonsHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/DateCore/Likes/GetCountLikes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/MainPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/DateCore/Likes/CheckIsLikes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java" />
       </list>
     </option>
   </component>
@@ -1375,7 +1360,7 @@
       <workItem from="1477503137906" duration="8677000" />
       <workItem from="1477516610585" duration="3085000" />
       <workItem from="1477575707952" duration="224000" />
-      <workItem from="1477592239024" duration="10588000" />
+      <workItem from="1477592239024" duration="11112000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1475056835166</created>
@@ -1517,11 +1502,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477596931783</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Add counts likes">
+      <created>1477604356399</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1477604356399</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223348000" />
+    <option name="totallyTimeSpent" value="223872000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1644,7 +1636,8 @@
     <MESSAGE value="ADD CRUD 84%" />
     <MESSAGE value="changed output architecture(SuperAll)" />
     <MESSAGE value="Add likes/dislikes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add likes/dislikes" />
+    <MESSAGE value="Add counts likes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add counts likes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1657,19 +1650,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/8ca28b37/b7e87b9b-e457-47ea-8393-914318b94955/project.public.Users">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/8ca28b37/b7e87b9b-e457-47ea-8393-914318b94955/project.public.Users">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2054,16 +2034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Likes/AddLikes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-          <folding>
-            <marker date="1477516956000" expanded="true" signature="808:909" ph="INSERT INTO \&quot;Likes\&quot;... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Posts/AddPosts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -2127,17 +2097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Likes/GetCountLikes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1477603464000" expanded="true" signature="768:791" ph="select * fro... Likes" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -2190,21 +2149,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/MainPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Likes/AddLikes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
           <folding>
-            <marker date="1477604294000" expanded="true" signature="1198:1221" ph="select * fro... Posts" />
+            <marker date="1477516956000" expanded="true" signature="808:909" ph="INSERT INTO \&quot;Likes\&quot;... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/MainPage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Likes/GetCountLikes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="330">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1477603464000" expanded="true" signature="768:791" ph="select * fro... Likes" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Likes/CheckIsLikes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <marker date="1477604750000" expanded="true" signature="741:764" ph="select * fro... Likes" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DateCore/Intersection/SuperAllGet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1477604872000" expanded="true" signature="1291:1314" ph="select * fro... Posts" />
+          </folding>
         </state>
       </provider>
     </entry>
