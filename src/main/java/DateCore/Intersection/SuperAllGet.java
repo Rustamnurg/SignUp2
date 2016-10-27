@@ -12,7 +12,7 @@ import java.util.LinkedList;
 public class SuperAllGet {
 
 
-    public LinkedList<SuperAll> superAllGet(int idUsers){
+    public LinkedList<SuperAll> superAllGet(int idUsers, String autorLogin){
         String url = "jdbc:postgresql://localhost/project?characterEncoding=utf8";
         String name = "rustam_admin";
         String password = "123321";
@@ -43,7 +43,7 @@ public class SuperAllGet {
 
                 linkedList.addFirst(new SuperAll(Integer.parseInt(rs.getString("id")),
                         Integer.parseInt(rs.getString("id_author")),rs.getString("content"),
-                        rs.getString("date"), editable, "loginAutor", false, 5));
+                        rs.getString("date"), editable, autorLogin, false, 5));
             }
 
 

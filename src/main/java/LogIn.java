@@ -45,7 +45,7 @@ public class LogIn extends HttpServlet {
             User user = searchDate.searchData(req.getParameter("login"), req.getParameter("password"));
 
             HttpSession session = req.getSession();
-            session.setAttribute("id", user.getId());
+            session.setAttribute("idUsers", user.getId());
             session.setAttribute("firstName", user.getFirstName());
             session.setAttribute("lastname", user.getLastName());
             session.setAttribute("email", user.getEmail());

@@ -27,6 +27,7 @@ public class MainPage extends HttpServlet {
         DeletePosts deletePosts = new DeletePosts();
         deletePosts.deletePosts(42);
 
+
         if (session.getAttribute("login") == null) {
             req.getRequestDispatcher("/").forward(req, resp);
         } else {
@@ -34,16 +35,12 @@ public class MainPage extends HttpServlet {
             req.setAttribute("MessageName", session.getAttribute("firstName"));
             req.setAttribute("MessageTemp", getWeather.getWeather("Kazan"));
 
-            GetAllPosts getAllPosts = new GetAllPosts();
+
             SuperAllGet superAllGet = new SuperAllGet();
 
 
-
-//            req.setAttribute("idUsers", session.getAttribute("id"));
-//            req.setAttribute("linkedList", getAllPosts.getAllPosts());
-
-
-            req.setAttribute("linkedList", superAllGet.superAllGet(Integer.parseInt(session.getAttribute("id").toString())));
+            req.setAttribute("linkedList", superAllGet.superAllGet(Integer.parseInt(session.getAttribute("idUsers").toString()),
+                    session.getAttribute("login").toString()));
 
 
             req.getRequestDispatcher("/MainPage.jsp").forward(req, resp);
