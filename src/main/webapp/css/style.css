@@ -1,10 +1,163 @@
-body{
-    background: cadetblue;
+/*body{*/
+    /*background: cadetblue;*/
+/*}*/
+
+/*.content {*/
+    /*background: gray;*/
+/*}*/
+/*.center {*/
+    /*margin: 0 auto;*/
+/*}*/
+/*CSS Reset от Yahoo.*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
 }
 
-.content {
-    background: gray;
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-.center {
-    margin: 0 auto;
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+
+/*/////////////////////////////////*/
+/*/////////////////////////////////*/
+/*/////////////////////////////////*/
+/*/////////////////////////////////*/
+
+
+body a{
+    text-decoration: none;
+}
+
+/*heder*/
+
+nav{
+    background: #2c2c2c;
+}
+header ul{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+nav li{
+    padding: 20px 20px;
+}
+nav a{
+    color:#696969;
+}
+header a:hover{
+    color:#fff;
+}
+header .active a {
+    background: #696969;
+    color: #fff;
+    padding: 20px 30px;
+}
+/*wrapper*/
+.wrapper{
+       background:#232323 url(../images/siteBackgroun.jpg) no-repeat fixed center top;
+
+}
+.wrapper h1{
+    padding: 50px 20px;
+}
+.wrapper h1 a{
+    color: #ffffff;
+    font-size: 48px;
+    font-family: Myriad Pro, Regular ;
+    font-weight: bold;
+    text-shadow: 3px 4px 2px #2c2c2c;
+}
+.wrapper h1 a:hover{
+    color: #6ab0ff;
+}
+/*contentBody*/
+.contentBody{
+    margin: 10px 10px 3px 10px;
+    background-color: rgba(60, 60, 60, 0.3);
+}
+article{
+    padding: 45px 25px 0 25px;
+    /*!!!*/
+    min-width: 1200px;
+
+}
+/*aside*/
+aside{
+    margin: 10px;
+    min-width: 220px;
+    padding: 0 25px 0 15px;
+    background-color: rgba(40, 40, 40, 0.5);
+
+}
+.sidebar{
+    padding-top: 45px;
+
+}
+.sidebar a{
+    color: #fff;
+    border-bottom: 1px solid white;
+    line-height: 10px;
+}
+aside h2{
+    color: #69b0ff;
+}
+/*footer*/
+footer{
+    background: #2c2c2c;
+    padding: 0 10px;
+    height: 90px;
+}
+/*mod*/
+@media all and (min-width: 500px){
+    header ul{
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+
+    .body{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .wrapper{
+        min-height: 1092px;
+    }
+    nav a{
+        padding: 20px 20px;
+    }
+
 }

@@ -14,22 +14,39 @@
 </style>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="min-width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
     <title>MainPage</title>
 </head>
 <body>
+<header>
+<nav>
+    <ul>
+        <li class="active"><a href="#">Blog</a></li>
+        <li><a href="">Users</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Settings</a></li>
+    </ul>
+</nav>
+</header>
 
 
-Welcome <c:out value="${MessageName}" default="noname"/> ! <br/>
-Weather <c:out value="${MessageTemp}" default="none"/>
+<%--Welcome <c:out value="${MessageName}" default="noname"/> ! <br/>--%>
+<%--Weather <c:out value="${MessageTemp}" default="none"/>--%>
 
-
+<div class="wrapper">
+    <h1><a href="#">Rustameil</a> </h1>
+    <div class="body">
+        <div class="contentBody"><article>
 <form id="form" action="<c:url value="/buttonsHandler"/>" method='post'>
     <textarea name="content" cols="20" rows="3" wrap="off"></textarea><br>
     <p><input type="submit" value="Add" name="action"></p>
 </form>
-
+            </article>
 
 <c:forEach var="posts" items="${linkedList}">
+            <article>
     <div class="content">
         <p>${posts.getContent()}</p>
         <p>${posts.getLoginAutor()} ${posts.getDate()} </p>
@@ -59,9 +76,38 @@ Weather <c:out value="${MessageTemp}" default="none"/>
         </form>
         <br/> <br/>
     </div>
+                </article>
 </c:forEach>
 
-
-
+        </div>
+        <%--<aside>--%>
+            <%--<div class="sidebar">--%>
+                <%--<h2>Sidebar</h2>--%>
+                <%--<ul>--%>
+                    <%--<li><a href="">Lorem Ipsum is</a></li>--%>
+                    <%--<li><a href="">Simply dummy</a></li>--%>
+                    <%--<li><a href="">Text of the printing</a></li>--%>
+                    <%--<li><a href="">And typesetting</a></li>--%>
+                    <%--<li><a href="">Industry lorem</a></li>--%>
+                    <%--<li><a href="">Ipsum has been</a></li>--%>
+                    <%--<li><a href="">The industry's</a></li>--%>
+                <%--</ul>--%>
+            <%--</div>--%>
+            <%--<div class="sidebar">--%>
+                <%--<h2>Sidebar</h2>--%>
+                <%--<ul>--%>
+                    <%--<li><a href="">Lorem Ipsum is</a></li>--%>
+                    <%--<li><a href="">Simply dummy</a></li>--%>
+                    <%--<li><a href="">Text of the printing</a></li>--%>
+                    <%--<li><a href="">And typesetting</a></li>--%>
+                    <%--<li><a href="">Industry lorem</a></li>--%>
+                    <%--<li><a href="">Ipsum has been</a></li>--%>
+                    <%--<li><a href="">The industry's</a></li>--%>
+                <%--</ul>--%>
+            <%--</div>--%>
+        <%--</aside>--%>
+    </div>
+</div>
+<footer>footer</footer>
 </body>
 </html>
