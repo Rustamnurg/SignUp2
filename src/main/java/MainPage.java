@@ -28,7 +28,7 @@ public class MainPage extends HttpServlet {
 
 
         if (session.getAttribute("login") == null) {
-            req.getRequestDispatcher("/").forward(req, resp);
+            req.getRequestDispatcher("/LogIn").forward(req, resp);
         } else {
 
             req.setAttribute("MessageName", session.getAttribute("firstName"));

@@ -55,7 +55,9 @@ abbr, acronym {
 /*/////////////////////////////////*/
 /*/////////////////////////////////*/
 /*/////////////////////////////////*/
-
+body{
+    /*font-family: Myriad Pro, Regular ;*/
+}
 
 body a{
     text-decoration: none;
@@ -88,7 +90,7 @@ header .active a {
 }
 /*wrapper*/
 .wrapper{
-       background:#232323 url(../images/siteBackgroun.jpg) no-repeat fixed center top;
+       background:#232323 url(/images/siteBackgroun.jpg) no-repeat fixed center top;
 
 }
 .wrapper h1{
@@ -112,7 +114,9 @@ header .active a {
 article{
     padding: 45px 25px 0 25px;
     /*!!!*/
-    min-width: 1200px;
+    min-width: 1350px;
+    color: #ffffff;
+    font-family: Myriad Pro, Regular;
 
 }
 /*aside*/

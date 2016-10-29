@@ -49,6 +49,7 @@
             <article>
     <div class="content">
         <p>${posts.getContent()}</p>
+        </br>
         <p>${posts.getLoginAutor()} ${posts.getDate()} </p>
         <form id="formWorkWithPosts" action="<c:url value="/buttonsHandler"/>" method='post'  value="null" name="action" >
             <p>
