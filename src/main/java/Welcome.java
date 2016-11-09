@@ -9,7 +9,7 @@ import java.io.IOException;
 /**
  * Created by Rustam on 04.11.16.
  */
-public class Welcom  extends HttpServlet {
+public class Welcome extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -19,7 +19,7 @@ public class Welcom  extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 
-
+        req.getRequestDispatcher("/Welcome.jsp").forward(req, resp);
 
     }
 }

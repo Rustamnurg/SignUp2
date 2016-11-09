@@ -55,12 +55,12 @@
 
 
     <servlet>
-        <servlet-name>Welcom</servlet-name>
-        <servlet-class>Welcom</servlet-class>
+        <servlet-name>Welcome</servlet-name>
+        <servlet-class>Welcome</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Welcom</servlet-name>
-        <url-pattern>/Welcom</url-pattern>
+        <servlet-name>Welcome</servlet-name>
+        <url-pattern>/Welcome</url-pattern>
     </servlet-mapping>
 
 
