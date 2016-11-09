@@ -29,8 +29,6 @@ public class LogIn extends HttpServlet {
             resp.sendRedirect("/mainPage");
         }
 
-
-
     }
 
     @Override
