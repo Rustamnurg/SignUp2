@@ -73,27 +73,7 @@ public class ButtonsHandler extends HttpServlet {
 
 
         }
-//        if(req.getParameter("add") != null) {
-//            posts.setId_author(Integer.parseInt(session.getAttribute("id").toString()));
-//            posts.setContent(req.getParameter("content"));
-//            addPosts.addPosts(posts);
-//        } else if (req.getParameter("Delete") != null) {
-//            DeletePosts deletePosts = new DeletePosts();
-//            deletePosts.deletePosts(Integer.parseInt(req.getParameter("idPosts")));
-//        }
-//        else if (req.getParameter("Edit") != null) {
-//            req.getParameter("idPosts");
-//          //  resp.
-////            ChangePosts changePosts = new ChangePosts();
-////            changePosts.changePosts()
-//        }
-//        else if (req.getParameter("Like") != null) {
-//        System.out.println("Like");
-//        }
-//
-//        else{
-//            System.out.println("No(");
-//        }
+
 
         resp.sendRedirect("/mainPage");
     }

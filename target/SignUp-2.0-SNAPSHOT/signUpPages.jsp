@@ -19,7 +19,7 @@
 
 <form method="POST">
     <p>First Name: <input name="firstName" ></p>
-    <p>Last Name: <input type="login" name="lastName" ></p>
+    <p>Last Name: <input name="lastName" ></p>
     <p>Email: <input type="email" name="email" ></p>
     <p>Login: <input type="login" name="login" ></p>
     <p>Password: <input type="password" name="passwordFirst" ></p>

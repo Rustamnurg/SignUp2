@@ -50,9 +50,6 @@ public class MainDataProcessor {
         if (!errorStatus.equals("")) {
             return errorStatus;
         }
-//        else if(!(сheckMatch.checkMatchLogIn(userLogIn.getLogin(),userLogIn.getPassword()))){
-//            return "Wrong email or password";
-//        }
         else if(!(сheckMatch.checkMatchLogIn(userLogIn.getLogin(),userLogIn.getPassword()))){
             return "Wrong email or password";
         }

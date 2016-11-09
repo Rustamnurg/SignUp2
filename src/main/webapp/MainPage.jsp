@@ -8,10 +8,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<style>
-    <%@include file='css/style.css' %>
-</style>
+<link href="<c:url value="/css/style.css"/>" rel="stylesheet">
+<%--<style>--%>
+    <%--<%@include file='css/style.css' %>--%>
+<%--</style>--%>
 <html>
 <head>
     <meta charset="utf-8">
@@ -53,7 +53,6 @@
         <p>${posts.getLoginAutor()} ${posts.getDate()} </p>
         <form id="formWorkWithPosts" action="<c:url value="/buttonsHandler"/>" method='post'  value="null" name="action" >
             <p>
-
                 <input type="hidden" value=${posts.getId_posts()} name="idPosts">
                 <c:if test="${edit}">
                    <p></p> <textarea name="edit-field" cols="20" rows="3"

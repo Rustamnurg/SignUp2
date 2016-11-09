@@ -41,7 +41,8 @@ SignUp extends HttpServlet {
         PrintWriter out = resp.getWriter();
         if (result.equals("")) {
             resp.setStatus(302);
-            req.getRequestDispatcher("/LogIn.jsp").forward(req, resp);
+            //req.getRequestDispatcher("/LogIn.jsp").forward(req, resp);
+           resp.sendRedirect("/LogIn");
         } else {
             resp.setStatus(302);
             out.println(getPageCode(result + "<br />" + "<a href=\"javascript:history.back();\">Try agan</a>"));
