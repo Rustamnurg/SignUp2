@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7891863a-fd6a-4b2b-9475-869313fbce88" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/Welcom.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/Welcom.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Welcom.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Welcom.java" afterPath="$PROJECT_DIR$/src/main/java/Welcome.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/Welcom.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/Welcome.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/LogIn.class" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/classes/LogIn.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/LogIn.class" afterPath="$PROJECT_DIR$/target/classes/LogIn.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/SignUp-2.0-SNAPSHOT/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
@@ -1426,7 +1420,7 @@
       <workItem from="1478669582096" duration="520000" />
       <workItem from="1478708827560" duration="2816000" />
       <workItem from="1478712061870" duration="79000" />
-      <workItem from="1478712716371" duration="1087000" />
+      <workItem from="1478712716371" duration="1122000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1475056835166</created>
@@ -1603,11 +1597,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478711605603</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="correct welcome">
+      <created>1478713919934</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1478713919934</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260286000" />
+    <option name="totallyTimeSpent" value="260321000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1735,7 +1736,8 @@
     <MESSAGE value="Add ?" />
     <MESSAGE value="Add ??" />
     <MESSAGE value="Add redirect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add redirect" />
+    <MESSAGE value="correct welcome" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct welcome" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
